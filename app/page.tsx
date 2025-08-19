@@ -20,6 +20,9 @@ export default function Page() {
                     <a href="/" className={truculenta.className + " text-xl text-[#68875B] font-bold hover:underline"}>Home</a>
                 </li>
                 <li>
+                    <a href="/about" className={truculenta.className + " text-xl text-[#68875B] font-bold hover:underline"}>About</a>
+                </li>
+                <li>
                     <a href="/projects" className={truculenta.className + " text-xl text-[#68875B] font-bold hover:underline"}>Projects</a>
                 </li>
                 <li>

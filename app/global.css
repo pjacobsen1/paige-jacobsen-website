@@ -1,3 +1,16 @@
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(var(--radius)) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(var(--radius)) rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit var(--duration, 20s) linear infinite;
+  transform: rotate(var(--angle, 0deg)) translateX(var(--radius, 160px)) rotate(calc(-1 * var(--angle, 0deg)));
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
