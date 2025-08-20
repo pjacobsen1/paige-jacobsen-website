@@ -1,10 +1,13 @@
+"use client";
+
 import { Truculenta, Fredericka_the_Great } from 'next/font/google'
 import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../../components/draggable-card";
 import { IconCloud } from "../../components/magicui/icon-cloud";
- 
+import { DivOrigami } from "@/components/DivOrigami";
+
 
 const fredericka = Fredericka_the_Great({
   weight: '400',
@@ -105,19 +108,25 @@ export default function About() {
             <main className="bg-[#fff0db] min-h-screen flex flex-row items-center justify-center p-12 gap-16 h-screen overflow-hidden">
                 
                 {/* left */}
-                <div className="flex flex-col items-start justify-center min-w-[300px] max-w-[450px] h-full pl-10">
+                <div className="flex flex-col items-start justify-center min-w-[400px] max-w-[500px] h-full pl-10">
                     <h1 className={fredericka.className + " text-8xl text-[#68875B] mb-10"}>
                         PAIGE JACOBSEN
                     </h1>
                     <p
-                        className={truculenta.className + " text-xl text-[#68875B]"}
+                        className={truculenta.className + " text-lg text-[#68875B]"}
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor sapien mi, luctus porta erat imperdiet imperdiet. Vestibulum sed metus at sapien interdum varius a feugiat sem. Morbi egestas ipsum non eros vehicula, ac eleifend libero ullamcorper. Aenean sit amet risus ultricies, pharetra libero in, condimentum dui.
+                        I’m a computer science student at the University of Chicago with a passion for building 
+                        at the intersection of design and technology. My experience spans frontend development—where 
+                        I enjoy creating responsive, user-friendly interfaces to full-stack projects and even systems-level
+                        course work. I’m driven by curiosity and creativity, whether that’s designing digital experiences,
+                        experimenting with AI-powered tools, or tackling research challenges in unexpected spaces. 
+                        This site highlights the projects I’ve built, the skills I’m growing, and the ways I’m exploring 
+                        how technology can be both functional and inspiring.
                     </p>
                     <img
                         src="/vine.png"
                         alt="Paige Jacobsen profile"
-                        className=""
+                        className="mt-10"
                     />
                     
                 </div>
@@ -126,13 +135,13 @@ export default function About() {
                 <div className="flex-1 flex items-center justify-center mr-10" style={{ position: 'relative' }}>
                     <DraggableCardContainer className="relative z-50 flex min-h-[600px] w-[600px] items-center justify-center overflow-visible">
                         {items.map((item, idx) => (
-                            <DraggableCardBody key={item.title + idx} className={item.className + ' z-50 bg-[#FFFAF5]'}>
+                            <DraggableCardBody key={item.title + idx} className={item.className + ' z-50 bg-[#FFFAF5] dark:bg-[#FFFAF5]'}>
                                 <img
                                     src={item.image}
                                     alt={item.title}
                                     className="pointer-events-none relative z-50 h-80 w-80 object-cover"
                                 />
-                                <h3 className={truculenta.className + " mt-4 text-center text-2xl font-bold text-[#68875B] dark:text-neutral-300"}>
+                                <h3 className={truculenta.className + " mt-4 text-center text-2xl font-bold text-[#68875B] dark:text-[#68875B]"}>
                                     {item.title}
                                 </h3>
                             </DraggableCardBody>
@@ -193,12 +202,12 @@ export default function About() {
             </section>
 
             {/* courses */}
-            <section className="w-full bg-[#eae3c9] flex flex-col items-center justify-center">
+            <section className="w-full bg-[#eae3c9] flex flex-col items-center justify-center py-9">
                 <div className="grid grid-cols-1 md:grid-cols-3 w-full ">
 
-                    <div className="-mt-10">
-                        <div className="flex items-center justify-center overflow-hidden">
-                            <IconCloud images={images} />
+                    <div className="flex flex-col justify-center h-full items-center">
+                        <div className=''>
+                            <DivOrigami/>
                         </div>
                     </div>
 

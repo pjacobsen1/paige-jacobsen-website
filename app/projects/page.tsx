@@ -26,12 +26,12 @@ export default function Projects() {
             </ul>
         </nav>
         
-        <main className="bg-[#fff0db] min-h-screen flex flex-col items-start justify-center p-12">
-        
-            <p>
-                projects
-            </p>
-
+        <main className="bg-[#fff0db] min-h-screen flex flex-col items-center justify-center p-12">
+            <div className="flex flex-1 items-center justify-center w-full h-full">
+                <p className={truculenta.className + " text-2xl text-[#68875B] font-bold"}>
+                    Coming Soon!
+                </p>
+            </div>
         </main>
 
     </div>
