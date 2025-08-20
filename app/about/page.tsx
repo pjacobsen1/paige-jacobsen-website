@@ -6,8 +6,6 @@ import {
   DraggableCardContainer,
 } from "../../components/draggable-card";
 import { IconCloud } from "../../components/magicui/icon-cloud";
-import { DivOrigami } from "@/components/DivOrigami";
-
 
 const fredericka = Fredericka_the_Great({
   weight: '400',
@@ -189,7 +187,7 @@ export default function About() {
                     </div>
 
                     <div className="-mt-10">
-                        <div className="flex items-center justify-center overflow-hidden">
+                        <div className="flex items-center justify-center overflow-hidden -mb-18">
                             <IconCloud images={images} />
                         </div>
                     </div>
@@ -207,7 +205,7 @@ export default function About() {
 
                     <div className="flex flex-col justify-center h-full items-center">
                         <div className=''>
-                            <DivOrigami/>
+
                         </div>
                     </div>
 
