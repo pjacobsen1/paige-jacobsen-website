@@ -187,7 +187,7 @@ export default function About() {
                     </div>
 
                     <div className="-mt-10">
-                        <div className="flex items-center justify-center overflow-hidden -mb-18">
+                        <div className="flex items-center justify-center overflow-hidden -mb-8">
                             <IconCloud images={images} />
                         </div>
                     </div>
