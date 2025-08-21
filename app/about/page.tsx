@@ -1,11 +1,12 @@
 "use client";
 
-import { Truculenta, Fredericka_the_Great } from 'next/font/google'
+import { Truculenta, Fredericka_the_Great, Keania_One } from 'next/font/google'
 import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../../components/draggable-card";
 import { IconCloud } from "../../components/magicui/icon-cloud";
+import { WordRotate } from "@/components/magicui/word-rotate";
 
 const fredericka = Fredericka_the_Great({
   weight: '400',
@@ -13,6 +14,11 @@ const fredericka = Fredericka_the_Great({
 })
 
 const truculenta = Truculenta({
+  weight: '400',
+  subsets: ['latin'],
+})
+
+const keania = Keania_One({
   weight: '400',
   subsets: ['latin'],
 })
@@ -57,7 +63,6 @@ const items = [
   ];
 
 const slugs = [
-  "java",
   "python",
   "c",
   "mysql",
@@ -65,13 +70,12 @@ const slugs = [
   "typescript",
   "html5",
   "tailwindcss",
-  "css3",
+  "css",
   "nextdotjs",
-  "vue-dot-js",
+  "vue.js",
   "arduino",
   "git",
   "googlecloud",
-  "visualstudiocode",
   "vim",
   "linux",
   "figma",
@@ -80,7 +84,7 @@ const slugs = [
 export default function About() {
 
     const images = slugs.map(
-        (slug) => `https://cdn.simpleicons.org/${slug}`,
+        (slug) => `https://cdn.simpleicons.org/${slug}/68875B`,
     );
 
     return (
@@ -200,12 +204,18 @@ export default function About() {
             </section>
 
             {/* courses */}
-            <section className="w-full bg-[#eae3c9] flex flex-col items-center justify-center py-9">
+            <section className="w-full bg-[#eae3c9] flex flex-col items-center justify-center py-9 h-80">
                 <div className="grid grid-cols-1 md:grid-cols-3 w-full ">
 
                     <div className="flex flex-col justify-center h-full items-center">
-                        <div className=''>
-
+                        <div 
+                            className="inline-block transition-all duration-[6000ms] ease-in-out border-2 border-[#68875B] p-4 rounded"
+                        >
+                            <WordRotate
+                            words={["Engineering Interactive Devices", "Software Development", "Computer Security"]}
+                            duration={1500}
+                            className={keania.className + " text-2xl text-[#68875B]"}
+                            />
                         </div>
                     </div>
 
