@@ -115,15 +115,9 @@ export default function About() {
                         PAIGE JACOBSEN
                     </h1>
                     <p
-                        className={truculenta.className + " text-lg text-[#68875B]"}
+                        className={truculenta.className + " text-xl text-[#68875B]"}
                     >
-                        I’m a computer science student at the University of Chicago with a passion for building 
-                        at the intersection of design and technology. My experience spans frontend development—where 
-                        I enjoy creating responsive, user-friendly interfaces to full-stack projects and even systems-level
-                        course work. I’m driven by curiosity and creativity, whether that’s designing digital experiences,
-                        experimenting with AI-powered tools, or tackling research challenges in unexpected spaces. 
-                        This site highlights the projects I’ve built, the skills I’m growing, and the ways I’m exploring 
-                        how technology can be both functional and inspiring.
+                        I’m a third year computer science student at the University of Chicago with a passion for building at the intersection of design and technology. My experience includes full-stack projects, systems-level coursework, and frontend development, where I enjoy creating responsive, user-friendly interfaces. From building interactive interfaces to experimenting with emerging tools and tackling complex problems, I’m always looking for new ways to learn and create. 
                     </p>
                     <img
                         src="/vine.png"
@@ -170,7 +164,7 @@ export default function About() {
                             </span>
                         </p>
                         <p className={truculenta.className + " text-xl text-[#68875B]"}>
-                            Java, Python, C, SQL, JavaScript, HTML, Tailwind CSS
+                            Java, Python, C, SQL, JavaScript, HTML
                         </p>
                         <p className={truculenta.className + " text-2xl text-[#68875B] font-bold"}>
                             <span className="font-extrabold">
@@ -178,7 +172,7 @@ export default function About() {
                             </span>
                         </p>
                         <p className={truculenta.className + " text-xl text-[#68875B]"}>
-                            Next.js, Vue.js, Arduino, TinyML
+                            Next.js, Vue.js, Arduino, TinyML, Tailwind CSS
                         </p>
                         <p className={truculenta.className + " text-2xl text-[#68875B] font-bold"}>
                             <span className="font-extrabold">
@@ -212,7 +206,7 @@ export default function About() {
                             className="inline-block transition-all duration-[6000ms] ease-in-out border-2 border-[#68875B] p-4 rounded"
                         >
                             <WordRotate
-                            words={["Engineering Interactive Devices", "Software Development", "Computer Security"]}
+                            words={["Engineering Interactive Devices", "Software Development", "Computer Security", "Systems Programming"]}
                             duration={1500}
                             className={keania.className + " text-2xl text-[#68875B]"}
                             />
@@ -221,7 +215,7 @@ export default function About() {
 
                     <div className="flex flex-col justify-center h-full items-center">
                         <p className={truculenta.className + " text-2xl text-[#68875B]"}>
-                            Engineering Interactive Devices, Software Development, Computer Security
+                            Engineering Interactive Devices, Software Development, Computer Security, Systems Programming
                         </p>
                     </div>
 

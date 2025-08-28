@@ -1,6 +1,11 @@
-import { Truculenta } from 'next/font/google'
+import { Truculenta, Fredericka_the_Great} from 'next/font/google'
 
 const truculenta = Truculenta({
+  weight: '400',
+  subsets: ['latin'],
+})
+
+const fredericka = Fredericka_the_Great({
   weight: '400',
   subsets: ['latin'],
 })
@@ -26,12 +31,20 @@ export default function Projects() {
             </ul>
         </nav>
         
-        <main className="bg-[#fff0db] min-h-screen flex flex-col items-center justify-center p-12">
-            <div className="flex flex-1 items-center justify-center w-full h-full">
-                <p className={truculenta.className + " text-2xl text-[#68875B] font-bold"}>
+        <main className="bg-[#fff0db] min-h-screen flex flex-col items-center p-12">
+            
+            {/* title */}
+            <div className="flex items-center justify-center w-full mt-20">
+                <p className={fredericka.className + " text-4xl text-[#68875B] font-bold"}>
                     Coming Soon!
                 </p>
             </div>
+
+            {/* projects */}
+            <div>
+               
+            </div>
+
         </main>
 
     </div>
