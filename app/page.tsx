@@ -3,13 +3,13 @@ import { Truculenta, Fredericka_the_Great } from 'next/font/google'
 import { useState, useEffect } from "react";
 
 const fredericka = Fredericka_the_Great({
-  weight: '400',
-  subsets: ['latin'],
+    weight: '400',
+    subsets: ['latin'],
 })
 
 const truculenta = Truculenta({
-  weight: '400',
-  subsets: ['latin'],
+    weight: '400',
+    subsets: ['latin'],
 })
 
 export default function Page() {
@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         );
     }
-    
+
     return (
         <div>
 
