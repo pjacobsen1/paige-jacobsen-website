@@ -23,7 +23,7 @@ export default function Page() {
 
     if (isMobile) {
         return (
-        <div className="flex items-center justify-center bg-[#fff0db] min-h-screen p-12">
+        <div className="flex items-center justify-center bg-[#fff0db] min-h-screen overflow-hidden p-12">
             <p className="text-lg text-[#68875B]">
                 This site is only accessible on a computer. Please visit on a desktop device.
             </p>
