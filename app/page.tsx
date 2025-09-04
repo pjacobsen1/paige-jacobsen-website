@@ -17,15 +17,15 @@ export default function Page() {
 
     useEffect(() => {
         if (window.innerWidth < 1024) {
-        setIsMobile(true);
+            setIsMobile(true);
         }
     }, []);
 
     if (isMobile) {
         return (
-        <div className="h-screen flex items-center justify-center text-center p-4">
-            <p className="text-lg sm:text-xl">
-            This site is only accessible on a computer. Please visit on a desktop device.
+        <div className="flex items-center justify-center bg-[#fff0db] min-h-screen p-12">
+            <p className="text-lg text-[#68875B]">
+                This site is only accessible on a computer. Please visit on a desktop device.
             </p>
         </div>
         );
