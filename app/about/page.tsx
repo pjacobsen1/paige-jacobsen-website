@@ -6,7 +6,7 @@ import {
   DraggableCardContainer,
 } from "../../components/draggable-card";
 import { IconCloud } from "../../components/magicui/icon-cloud";
-import { WordRotate } from "@/components/magicui/word-rotate";
+import { DivOrigami } from '@/components/hoverui/logo-origami';
 
 const fredericka = Fredericka_the_Great({
   weight: '400',
@@ -14,11 +14,6 @@ const fredericka = Fredericka_the_Great({
 })
 
 const truculenta = Truculenta({
-  weight: '400',
-  subsets: ['latin'],
-})
-
-const keania = Keania_One({
   weight: '400',
   subsets: ['latin'],
 })
@@ -84,7 +79,7 @@ const slugs = [
 export default function About() {
 
     const images = slugs.map(
-        (slug) => `https://cdn.simpleicons.org/${slug}/68875B`,
+        (slug) => `https://cdn.simpleicons.org/${slug}`,
     );
 
     return (
@@ -185,7 +180,7 @@ export default function About() {
                     </div>
 
                     <div className="-mt-10">
-                        <div className="flex items-center justify-center overflow-hidden -mb-8">
+                        <div className="flex items-center justify-center overflow-hidden -mb-8 opacity-60">
                             <IconCloud images={images} />
                         </div>
                     </div>
@@ -202,15 +197,7 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-3 w-full ">
 
                     <div className="flex flex-col justify-center h-full items-center">
-                        <div 
-                            className="inline-block transition-all duration-[6000ms] ease-in-out border-2 border-[#68875B] p-4 rounded"
-                        >
-                            <WordRotate
-                            words={["Engineering Interactive Devices", "Software Development", "Computer Security", "Systems Programming"]}
-                            duration={1500}
-                            className={keania.className + " text-2xl text-[#68875B]"}
-                            />
-                        </div>
+                        <DivOrigami/>
                     </div>
 
                     <div className="flex flex-col justify-center h-full items-center">

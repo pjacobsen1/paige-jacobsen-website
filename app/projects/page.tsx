@@ -1,3 +1,6 @@
+"use client";
+
+import CardFlip from '@/components/kokonutui/card-flip';
 import { Truculenta, Fredericka_the_Great} from 'next/font/google'
 
 const truculenta = Truculenta({
