@@ -1,6 +1,6 @@
 "use client";
 
-import { Truculenta, Fredericka_the_Great, Keania_One } from 'next/font/google'
+import { Truculenta, Fredericka_the_Great} from 'next/font/google'
 import {
   DraggableCardBody,
   DraggableCardContainer,
