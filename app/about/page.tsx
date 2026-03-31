@@ -167,7 +167,7 @@ export default function About() {
                             </span>
                         </p>
                         <p className={truculenta.className + " text-xl text-[#68875B]"}>
-                            Next.js, Vue.js, Arduino, TinyML, Tailwind CSS
+                            Next.js, Vue.js, ROS2, OpenCV, Arduino, TinyML, Tailwind CSS
                         </p>
                         <p className={truculenta.className + " text-2xl text-[#68875B] font-bold"}>
                             <span className="font-extrabold">
@@ -202,7 +202,7 @@ export default function About() {
 
                     <div className="flex flex-col justify-center h-full items-center">
                         <p className={truculenta.className + " text-2xl text-[#68875B]"}>
-                            Engineering Interactive Devices, Software Development, Computer Security, Systems Programming
+                            Engineering Interactive Devices, Software Development, Computer Security, Systems Programming, Robotics, Discrete Mathematics, Theory of Algorithms, Data Visualization
                         </p>
                     </div>
 

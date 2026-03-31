@@ -5,6 +5,8 @@ import CardFlipRabble from '@/components/kokonutui/card-flip-rabble';
 import CardFlipShell from '@/components/kokonutui/card-flip-shell';
 import CardFlipLZW from '@/components/kokonutui/card-flip-lzw';
 import { Truculenta, Fredericka_the_Great} from 'next/font/google'
+import CardFlipDanceBots from '@/components/kokonutui/card-flip-dance-bot';
+import CardFlipQLearning from '@/components/kokonutui/card-flip-qlearning';
 
 const truculenta = Truculenta({
   weight: '400',
@@ -48,6 +50,8 @@ export default function Projects() {
 
             {/* projects */}
             <div className='w-full grid grid-cols-3 pl-40 pr-40 mt-20 gap-20'>
+               <div className="flex items-center justify-center"><CardFlipDanceBots /></div>
+               <div className="flex items-center justify-center"><CardFlipQLearning /></div>
                <div className="flex items-center justify-center"><CardFlipSemadoc /></div>
                <div className="flex items-center justify-center"><CardFlipRabble /></div>
                <div className="flex items-center justify-center"><CardFlipShell /></div>

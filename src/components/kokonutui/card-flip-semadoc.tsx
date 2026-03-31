@@ -23,7 +23,7 @@ export default function CardFlipSemadoc({
   tools = ["Next.js", "TypeScript", "Tailwind CSS"],
   dates = "June 2025 – Present",
   link,
-  accentColor = "#f5d9d0",
+  accentColor = "#d5daecff",
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 

@@ -12,18 +12,18 @@ export interface CardFlipProps {
   accentColor?: string;
 }
 
-export default function CardFlipRabble({
-  title = "Rabble",
-  description = "Rabble is a full-stack social media application built with Django, JavaScript, Python, HTML, and CSS. It allows users to create and edit posts, like content, and interact in real time with dynamic frontend updates. The platform includes RESTful API endpoints for CRUD operations and is deployed on Google Cloud Platform, managing SQL databases to ensure persistent and scalable data storage. It supports multiple users concurrently, providing a robust and interactive environment for social collaboration.",
-  details = [
-    "Built a full-stack social media application using Django, JavaScript, and SQL, supporting posts, likes, and dynamic frontend updates.",
-    "Implemented RESTful API endpoints for CRUD operations using Django views and serializers (e.g., POST, PATCH for post creation and editing).",
-    "Deployed the application on Google Cloud Platform, managing SQL databases and ensuring persistent, scalable data storage."
+export default function CardFlipDanceBots({
+  title = "Dance Bots",
+  description = "Dance Bot is a ROS2-based robotics project that combines reinforcement learning, computer vision, and motion control to create two robots capable of performing coordinated dance movements against each other. The system used learned policies, color-based visual input, and synchronized base and arm motions to generate responsive choreography, demonstrating experience with multi-agent systems, autonomous behavior, perception, and robotic control in a dynamic, real-time environment with multi-component coordination.",
+  details=[
+    "Built a ROS2 robot system that combined reinforcement learning, computer vision, and motion planning to perform synchronized dance routines.",
+    "Integrated base movement, arm motion, and gripper control to coordinate expressive multi-part robotic actions.",
+    "Used visual input and learned policies to guide behavior, creating a responsive system that connected perception with autonomous motion."
   ],
-  tools = ["Django", "JavaScript", "Python", "HTML", "CSS"],
-  dates = "March 2025 – May 2025",
+  tools = ["Python", "ROS2", "OpenCV", "Machine Learning"],
+  dates = "November 2025 - December 2025",
   link,
-  accentColor = "#d5ebecff",
+  accentColor = "#ffd9edff",
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 

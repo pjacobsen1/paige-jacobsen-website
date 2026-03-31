@@ -23,7 +23,7 @@ export default function CardFlipShell({
   tools = ["C"],
   dates = "December 2024",
   link,
-  accentColor = "#f0ebf5",
+  accentColor = "#ddecd5ff",
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 

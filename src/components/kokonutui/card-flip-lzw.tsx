@@ -23,7 +23,7 @@ export default function CardFlipLZW({
   tools = ["C"],
   dates = "October 2024 – November 2024",
   link,
-  accentColor = "#e6edf0",
+  accentColor = "#f6ccccff",
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 

@@ -12,18 +12,18 @@ export interface CardFlipProps {
   accentColor?: string;
 }
 
-export default function CardFlipRabble({
-  title = "Rabble",
-  description = "Rabble is a full-stack social media application built with Django, JavaScript, Python, HTML, and CSS. It allows users to create and edit posts, like content, and interact in real time with dynamic frontend updates. The platform includes RESTful API endpoints for CRUD operations and is deployed on Google Cloud Platform, managing SQL databases to ensure persistent and scalable data storage. It supports multiple users concurrently, providing a robust and interactive environment for social collaboration.",
-  details = [
-    "Built a full-stack social media application using Django, JavaScript, and SQL, supporting posts, likes, and dynamic frontend updates.",
-    "Implemented RESTful API endpoints for CRUD operations using Django views and serializers (e.g., POST, PATCH for post creation and editing).",
-    "Deployed the application on Google Cloud Platform, managing SQL databases and ensuring persistent, scalable data storage."
+export default function CardFlipQLearning({
+  title = "Q-Learning Robot Control",
+  description = "This project used Q-learning to train a robot to make action decisions based on environmental state. The system learned policies through reward-driven updates and then executed the highest-value actions to complete tasks autonomously. It highlights experience with reinforcement learning, decision-making systems, and robotics integration, including mapping learned policies directly to real robot behaviors and handling state transitions in a dynamic environment.",
+  details=[
+    "Developed a Q-learning system that trained a robot to choose actions based on state and reward feedback.",
+    "Implemented state-action value updates and execution logic to allow the robot to perform learned behaviors autonomously.",
+    "Connected reinforcement learning outputs to ROS2 robot actions, bridging algorithm design with real robotic control."
   ],
-  tools = ["Django", "JavaScript", "Python", "HTML", "CSS"],
-  dates = "March 2025 – May 2025",
+  tools = ["ROS2, Python"],
+  dates = "October 2025 – November 2025",
   link,
-  accentColor = "#d5ebecff",
+  accentColor = "#e2d5ecff",
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
